@@ -2,12 +2,16 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Test from "../components/test";
+import DialogDefault from "../components/dialog";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
     <h1 class="text-red-400">test</h1>
-    <Test client:visible />
+    <Test client:load />
+    <hr />
+    <DialogDefault client:load />
+    <hr />
     <svg
       class="astro-a"
       width="495"
